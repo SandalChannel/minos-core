@@ -1,12 +1,12 @@
-name: Vanilla Core
+name: MinOS Core
 id: core
 
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/pico:main
+  base: ghcr.io/sandalchannel/pico:main
   singlelayer: false
   labels:
-    maintainer: Vanilla OS Contributors
+    maintainer: Minute Games, Vanilla OS Contributors
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:
