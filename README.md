@@ -1,10 +1,12 @@
-# Vanilla OS Core Image
+# MinOS Core Image
 
-Containerfile for building a Vanilla OS Core image.
+Containerfile for building a MinOS/VanillaOS Core image.
+
+This fork of the [Vanilla OS Core](https://github.com/Vanilla-OS/core-image) image uses the Debian Stable repository rather than Debian Sid.
 
 > [!IMPORTANT]
 > This image is not intended to be used directly. It is used as a base image for other images.
-> Like the Vanilla OS Desktop image, etc.
+> Like the MinOS (DevX) Desktop and Nvidia images.
 
 ## Build
 
@@ -13,7 +15,7 @@ Containerfile for building a Vanilla OS Core image.
 
 ```bash
 vib build recipe.yml
-podman image build -t vanillaos/core .
+podman image build -t sandalchannel/core .
 ```
 
 ## Verify Image Build Provenance Attestation
